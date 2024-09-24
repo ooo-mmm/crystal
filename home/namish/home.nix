@@ -36,14 +36,9 @@ in
 
   nixpkgs.config = {
     allowUnfree = true;
-    allowInsecure = true;
-    allowBroken = true;
     allowUnfreePredicate = _: true;
   };
 
-  nixpkgs.config.permittedInsecurePackages = [
-    "electron-25.9.0"
-  ];
 
   home = {
     activation = {
