@@ -43,7 +43,7 @@
     upower.enable = true;
     xserver = {
       enable = true;
-      videoDrivers = [ "amdgpu" ];
+      videoDrivers = [ "nvidia" ];
       libinput = {
         enable = true;
         touchpad = {
@@ -61,5 +61,10 @@
       };
       desktopManager.gnome.enable = false;
     };
+  };
+
+  hardware.nvidia = {
+    modesetting.enable = true;
+    open = false;
   };
 }
