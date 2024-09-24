@@ -31,8 +31,8 @@
     '';
 
   networking.hostName = "frostbyte";
-  networking.useDHCP = false;
-  networking.interfaces.wlo1.useDHCP = true;
+  networking.useDHCP = true;
+  #networking.interfaces.wlo1.useDHCP = true;
 
   boot.kernelPackages = pkgs.linuxPackages_5_15;
 
